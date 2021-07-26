@@ -9,7 +9,7 @@ import Modal from './Modal';
 import Pagination from "react-js-pagination";
 import Nav from './navbar';
 import addForm from './addForm';
-import List from './list';
+import List from './test';
 
 
 class Main extends React.Component {
@@ -170,9 +170,7 @@ class Main extends React.Component {
     render() {
         return (
 
-            <div className="container">
-
-
+            <div>
                 <BrowserRouter>
                     <Nav/>
                     <div className="py-4">
@@ -182,83 +180,89 @@ class Main extends React.Component {
                         </Switch>
                     </div>
                 </BrowserRouter>
-                <Alert type={this.state.alertType} message={this.state.alertMessage} show={this.state.alertShow}/>
-                <Modal data={this.state}/>
-                {/*<table className="table table-bordered table-striped">*/}
+                <div className="container">
+
+
+
+                    <Alert type={this.state.alertType} message={this.state.alertMessage} show={this.state.alertShow}/>
+                    <Modal data={this.state}/>
+                    {/*<table className="table table-bordered table-striped">*/}
                     {/*<thead>*/}
                     {/*<tr>*/}
-                        {/*<th>SR</th>*/}
-                        {/*<th>Name</th>*/}
-                        {/*<th>Email</th>*/}
-                        {/*<th>Phone</th>*/}
-                        {/*<th>Action</th>*/}
+                    {/*<th>SR</th>*/}
+                    {/*<th>Name</th>*/}
+                    {/*<th>Email</th>*/}
+                    {/*<th>Phone</th>*/}
+                    {/*<th>Action</th>*/}
                     {/*</tr>*/}
                     {/*</thead>*/}
                     {/*<tbody>*/}
 
 
                     {/*{this.state.employee.length == 0 ?*/}
-                        {/*<tr>*/}
-                            {/*<td colSpan="5" className="text-center"> No Record Found</td>*/}
-                        {/*</tr>*/}
-                        {/*: this.state.employee.data.map((employee, i) =>*/}
-                            {/*<tr key={i}>*/}
-                                {/*<td>{employee.id}</td>*/}
-                                {/*<td>{employee.name}</td>*/}
-                                {/*<td>{employee.email}</td>*/}
-                                {/*<td>{employee.phone}</td>*/}
-                                {/*<td>*/}
-                                    {/*<button onClick={(e) => this.getOne(e, employee)}*/}
-                                            {/*data-toggle="modal" data-target="#exampleModalCenter"*/}
-                                            {/*className="btn-sm btn-info"><i*/}
-                                        {/*className="fa fa-edit"></i>edit*/}
-                                    {/*</button>*/}
-                                    {/*|*/}
-                                    {/*<button onClick={(e) => this.delete(e, employee.id)} className="btn-sm btn-danger">*/}
-                                        {/*<i*/}
-                                            {/*className="fa fa-trush"></i>Delete</button>*/}
-                                {/*</td>*/}
-                            {/*</tr>*/}
-                        {/*)}*/}
+                    {/*<tr>*/}
+                    {/*<td colSpan="5" className="text-center"> No Record Found</td>*/}
+                    {/*</tr>*/}
+                    {/*: this.state.employee.data.map((employee, i) =>*/}
+                    {/*<tr key={i}>*/}
+                    {/*<td>{employee.id}</td>*/}
+                    {/*<td>{employee.name}</td>*/}
+                    {/*<td>{employee.email}</td>*/}
+                    {/*<td>{employee.phone}</td>*/}
+                    {/*<td>*/}
+                    {/*<button onClick={(e) => this.getOne(e, employee)}*/}
+                    {/*data-toggle="modal" data-target="#exampleModalCenter"*/}
+                    {/*className="btn-sm btn-info"><i*/}
+                    {/*className="fa fa-edit"></i>edit*/}
+                    {/*</button>*/}
+                    {/*|*/}
+                    {/*<button onClick={(e) => this.delete(e, employee.id)} className="btn-sm btn-danger">*/}
+                    {/*<i*/}
+                    {/*className="fa fa-trush"></i>Delete</button>*/}
+                    {/*</td>*/}
+                    {/*</tr>*/}
+                    {/*)}*/}
                     {/*</tbody>*/}
-                {/*</table>*/}
-                {/*<div>*/}
+                    {/*</table>*/}
+                    {/*<div>*/}
                     {/*<Pagination*/}
-                        {/*activePage={this.state?.employee?.current_page ? this.state?.employee?.current_page : 0}*/}
-                        {/*itemsCountPerPage={this.state?.employee?.per_page ? this.state?.employee?.per_page : 0}*/}
-                        {/*totalItemsCount={this.state?.employee?.total ? this.state?.employee?.total : 0}*/}
-                        {/*onChange={(pageNumber) => {*/}
-                            {/*this.getAll(pageNumber)*/}
-                        {/*}}*/}
-                        {/*pageRangeDisplayed={5}*/}
-                        {/*itemClass="page-item"*/}
-                        {/*linkClass="page-link"*/}
-                        {/*firstPageText="First Page"*/}
-                        {/*lastPageText="Last Lage"*/}
+                    {/*activePage={this.state?.employee?.current_page ? this.state?.employee?.current_page : 0}*/}
+                    {/*itemsCountPerPage={this.state?.employee?.per_page ? this.state?.employee?.per_page : 0}*/}
+                    {/*totalItemsCount={this.state?.employee?.total ? this.state?.employee?.total : 0}*/}
+                    {/*onChange={(pageNumber) => {*/}
+                    {/*this.getAll(pageNumber)*/}
+                    {/*}}*/}
+                    {/*pageRangeDisplayed={5}*/}
+                    {/*itemClass="page-item"*/}
+                    {/*linkClass="page-link"*/}
+                    {/*firstPageText="First Page"*/}
+                    {/*lastPageText="Last Lage"*/}
                     {/*/>*/}
-                {/*</div>*/}
+                    {/*</div>*/}
 
-                {/*<form onSubmit={this.handleSubmit} autoComplete="off">*/}
+                    {/*<form onSubmit={this.handleSubmit} autoComplete="off">*/}
                     {/*<div className="form-group">*/}
-                        {/*<label>Name</label>*/}
-                        {/*<input type="text" value={this.state.name} name="name" className="form-control"*/}
-                               {/*onChange={this.handleChange1}/>*/}
+                    {/*<label>Name</label>*/}
+                    {/*<input type="text" value={this.state.name} name="name" className="form-control"*/}
+                    {/*onChange={this.handleChange1}/>*/}
                     {/*</div>*/}
                     {/*<div className="form-group">*/}
-                        {/*<label>Email</label>*/}
-                        {/*<input type="email" value={this.state.email} name="email" className="form-control"*/}
-                               {/*onChange={this.handleChange2}/>*/}
+                    {/*<label>Email</label>*/}
+                    {/*<input type="email" value={this.state.email} name="email" className="form-control"*/}
+                    {/*onChange={this.handleChange2}/>*/}
                     {/*</div>*/}
                     {/*<div className="form-group">*/}
-                        {/*<label>Phone</label>*/}
-                        {/*<input type="text" value={this.state.phone} name="phone" className="form-control"*/}
-                               {/*onChange={this.handleChange3}/>*/}
+                    {/*<label>Phone</label>*/}
+                    {/*<input type="text" value={this.state.phone} name="phone" className="form-control"*/}
+                    {/*onChange={this.handleChange3}/>*/}
                     {/*</div>*/}
                     {/*<Button type="submit" className="btn btn-primary">Save It!</Button>*/}
-                {/*</form>*/}
+                    {/*</form>*/}
 
 
+                </div>
             </div>
+
         );
     }
 }
